@@ -34,9 +34,6 @@ db.serialize(() => {
 
 	db.each('SELECT rowid AS id, info FROM lorem', (err: any, row: any) => {
 		console.log(row.id + ': ' + row.info);
-
-		VscodeManager.getInstance().log('Test = ' + row.id + ': ' + row.info);
-		vscode.window.showInformationMessage('Test = ' + row.id + ': ' + row.info);
 	});
 });
 
