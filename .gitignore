@@ -5,7 +5,7 @@
 *.Makefile
 *.target.gyp.mk
 lib/binding
-build
+build/**
 out
 Release
 Debug
